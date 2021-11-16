@@ -17,6 +17,7 @@ body {
   display: flex;
   max-width: 2000px;
   margin: 0 auto;
+  transition: all 0.5s ease-in-out;
 }
 main {
   width: 100%;
@@ -26,6 +27,13 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+button {
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 h2.secondary-heading {
   font-size: 1.3rem;
@@ -79,10 +87,6 @@ h2.secondary-heading {
   margin-bottom: 30px;
 }
 .masthead button {
-  padding: 5px 7px;
-  border-radius: 5px;
-  border: none;
-  background: none;
   color: #ededf1;
 }
 button.user {
@@ -132,22 +136,38 @@ p.pin {
   left: -15px;
   z-index: 1;
 }
-.transact {
+.transact,
+.list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
-.transact img {
+.transact img,
+.list img {
   margin-right: 10px;
 }
-.transact p {
+.transact p,
+.list p {
   flex: 1;
   text-align: right;
+}
+.transact small {
+  color: #4b4da8;
 }
 .red {
   color: #be3852;
 }
 .green {
   color: #91b948;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #161840;
+  padding: 10px 0;
+}
+.budget {
+  grid-row: 2/5;
 }
