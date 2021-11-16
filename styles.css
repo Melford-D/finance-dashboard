@@ -15,8 +15,8 @@ body {
   background: #161840;
   color: #ededf1;
   display: flex;
-  /* max-width: 1440px;
-  margin: 0 auto; */
+  max-width: 2000px;
+  margin: 0 auto;
 }
 main {
   width: 100%;
@@ -25,7 +25,11 @@ main {
 section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
+}
+h2.secondary-heading {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 .card {
   background: #1e1f58;
@@ -127,4 +131,23 @@ p.pin {
   position: relative;
   left: -15px;
   z-index: 1;
+}
+.transact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.transact img {
+  margin-right: 10px;
+}
+.transact p {
+  flex: 1;
+  text-align: right;
+}
+.red {
+  color: #be3852;
+}
+.green {
+  color: #91b948;
 }
