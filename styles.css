@@ -152,7 +152,8 @@ p.pin {
   flex: 1;
   text-align: right;
 }
-.transact small {
+.transact small,
+.budget small {
   color: #4b4da8;
 }
 .red {
@@ -165,9 +166,24 @@ p.pin {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #161840;
+  border-bottom: 2px solid #1175f6;
   padding: 10px 0;
 }
 .budget {
   grid-row: 2/5;
+}
+.subscriptions h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-body p {
+  padding: 10px 0;
+}
+img.progress {
+  width: 105px;
 }
