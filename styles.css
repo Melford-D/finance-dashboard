@@ -22,7 +22,22 @@ main {
   width: 100%;
   padding: 30px;
 }
-
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  background: #1e1f58;
+  border-radius: 18px;
+  padding: 15px;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 /* sibar styles */
 .sidebar {
   min-width: 250px;
@@ -49,6 +64,7 @@ main {
 }
 .link-list img {
   margin-right: 10px;
+  width: 24px;
 }
 
 /* main section styles */
@@ -56,8 +72,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
-
 .masthead button {
   padding: 5px 7px;
   border-radius: 5px;
@@ -65,8 +81,50 @@ main {
   background: none;
   color: #ededf1;
 }
-
 button.user {
   display: flex;
   align-items: center;
+}
+button.user img {
+  margin-right: 10px;
+}
+.credit-card {
+  background: linear-gradient(104.45deg, #1175f6 -45.92%, #161840 100%);
+
+  /* border: 1px solid rgba(255, 255, 255, 0.05); */
+  border-radius: 24px;
+  padding: 15px 20px;
+  /* height: 200px; */
+  width: 300px;
+  font-family: 300;
+  font-size: 1.1rem;
+}
+.credit-card p {
+  padding: 5px 0;
+}
+p.pin {
+  padding: 20px 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ring {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.r__1 {
+  background: #8fc3fa;
+  z-index: 2;
+}
+.r__2 {
+  background: #a32eb3;
+  position: relative;
+  left: -15px;
+  z-index: 1;
 }
