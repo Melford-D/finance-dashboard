@@ -17,7 +17,6 @@ body {
   display: flex;
   max-width: 2000px;
   margin: 0 auto;
-  transition: all 0.5s ease-in-out;
 }
 main {
   width: 100%;
@@ -71,6 +70,7 @@ h2.secondary-heading {
   align-items: center;
   padding: 7px 12px;
   border-radius: 8px;
+  transition: 0.5s ease-in;
 }
 .link-list a.active,
 .link-list a:hover {
@@ -237,6 +237,7 @@ img.bar {
     height: 100%;
     transform: translateX(-102%);
     pointer-events: none;
+    transition: 0.5s ease-in;
   }
   .sidebar.active {
     transform: translateX(0%);
@@ -244,6 +245,9 @@ img.bar {
   }
   .hamburger {
     display: initial;
+    position: relative;
+    z-index: 1;
+    left: -7px;
   }
   .logo {
     display: none;
