@@ -22,7 +22,7 @@ mainPage.addEventListener('click', () => {
 
 // chart
 var xValues = [0,'Jan','Feb','Mar','Apr','May'];
-var yValues = [7,8,8.3,9,9,9.5,9.9];
+var yValues = [7,6.4,8.3,9,8.5,9,9.9];
 
 new Chart("myChart", {
   type: "line",
@@ -39,7 +39,7 @@ new Chart("myChart", {
   options: {
     legend: {display: false},
     scales: {
-      yAxes: [{ticks: {min: 6, max:10}}],
+      yAxes: [{ticks: {min: 6, max:9.5}}],
     }
   }
 });
