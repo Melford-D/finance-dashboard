@@ -252,6 +252,7 @@ img.bar {
     position: fixed;
     z-index: 1;
     /* left: -7px; */
+    background: #1e1f58;
   }
   .logo {
     display: none;
